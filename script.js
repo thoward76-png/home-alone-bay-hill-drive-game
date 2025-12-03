@@ -1,4 +1,12 @@
 
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
+
 // ---------------------------
 // STORY DATA
 // ---------------------------
@@ -520,7 +528,8 @@ function renderQuestion() {
   nextBtn.disabled = true;
 
   answersContainer.innerHTML = "";
-  q.answers.forEach((ans) => {
+  shuffle(q.answers);
+        q.answers.forEach((ans) => {
     const btn = document.createElement("button");
     btn.className = "answer-btn";
     btn.textContent = ans.label;
