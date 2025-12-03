@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Alone: The Bay Hill Drive Heist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="game">
+    <!-- MODE SELECT SCREEN -->
+    <section id="mode-screen" class="screen active">
+      <h1>Home Alone: The Bay Hill Drive Heist</h1>
+      <p>
+        The Wet Bandits are back on Bay Hill Drive. Join Kevin and protect the house
+        by following clues, making choices, and setting traps.
+      </p>
+      <div class="mode-buttons">
+        <button id="kids-mode-btn" class="btn primary">Kids Edition</button>
+        <button id="challenge-mode-btn" class="btn secondary">Challenge Edition</button>
+      </div>
+      <p class="hint">
+        Kids Edition is shorter and easier. Challenge Edition has more clues, choices,
+        and different endings.
+      </p>
+    </section>
+
+    <!-- QUESTION / STORY SCREEN -->
+    <section id="story-screen" class="screen">
+      <header class="top">
+        <p id="mode-label"></p>
+        <p id="progress-text"></p>
+        <button id="sound-toggle" class="icon-btn" aria-label="Toggle sound">
+          🔊
+        </button>
+      </header>
+      <article id="question-card">
+        <h2 id="question-title"></h2>
+        <p id="question-text"></p>
+        <div id="answers"></div>
+        <p id="feedback" class="feedback"></p>
+        <div class="actions">
+          <button id="next-btn" class="btn primary" disabled>Next</button>
+          <button id="back-to-mode-btn" class="btn ghost">Back to Mode Select</button>
+        </div>
+      </article>
+    </section>
+
+    <!-- VICTORY / ENDING SCREEN -->
+    <section id="ending-screen" class="screen">
+      <h1 id="ending-title"></h1>
+      <p id="ending-text"></p>
+      <div class="actions center">
+        <button id="play-again-same-btn" class="btn primary">Play Again (Same Mode)</button>
+        <button id="back-to-mode-btn-2" class="btn ghost">Choose Mode</button>
+      </div>
+    </section>
+  </main>
+
+  <footer id="credits">
+    <p>Home Alone-inspired fan game for the Bay Hill Drive Home Alone display.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
