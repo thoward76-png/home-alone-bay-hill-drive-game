@@ -77,7 +77,7 @@ const kidsQuestions = [
     id: 3,
     title: "Act 2 – Footprints by the Side Door",
     text:
-      "Uh-oh. There are footprints by the side “friends” entrance. Who usually watches that door with a shovel ready?",
+      "Uh-oh. There are footprints by the side side entrance door. Who usually watches that door with a shovel ready?",
     isFinal: false,
     answers: [
       {
@@ -264,7 +264,7 @@ const challengeQuestions = [
     id: 3,
     title: "Act 2 – The Side Entrance Problem",
     text:
-      "Fresh footprints lead past the main door toward the “friends” entrance. If the Bandits test that door, who’s your best silent ally?",
+      "Fresh footprints lead past the main door toward the side entrance door. If the Bandits test that door, who’s your best silent ally?",
     isFinal: false,
     answers: [
       {
